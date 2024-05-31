@@ -1,13 +1,6 @@
 var POSAPI = require('../lib/POSAPI')();
 var fs = require('fs');
 
-var options = {
-  host: 'testepos.chinatrust.com.tw',
-  port: 2011,
-  servername: 'hy3ds.hyweb.com.tw',
-  ca: fs.readFileSync('./server.cer')
-};
-
 POSAPI.init(options);
 
 // 信用卡授權交易
